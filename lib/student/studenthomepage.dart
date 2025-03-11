@@ -143,7 +143,7 @@ class _StudentHomePageState extends State<StudentHomePage> {
                             ),
                             SizedBox(height: 10,),
                             const Text(
-                              '\t\t\t\tEDUHUB!',
+                              '\t\t\t\tOEMS!',
                               style: TextStyle(
                                   fontSize: 50,
                                   fontFamily: 'Patua One',

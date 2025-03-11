@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1073778666836",
+    "project_id": "online-exam-management-s-eaeac",
+    "storage_bucket": "online-exam-management-s-eaeac.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073778666836:android:8e96680d647d864fafecc1",
+        "android_client_info": {
+          "package_name": "online.exam.management.system"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUFotM4iFNxyqcl8XOh7JWp6CY44h-afU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

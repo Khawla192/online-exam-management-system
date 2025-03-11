@@ -1,19 +1,19 @@
-# 🎓 Online Exam Management System  
+# Online Exam Management System  
 
-## 📸 Screenshots  
+## Screenshots  
 ![Login Screen](assets/Logo.png)
 ---
 
-## 📝 About the App  
+## About the App  
 **Online Exam Management System** is a Flutter-based mobile application designed to facilitate online exams for educational institutions. Built with Firebase backend, it provides:  
 
-### 👨🏫 Teacher Features:  
+### Teacher Features:  
 - Create exams with multiple question types (MCQ/TrueFalse/Essay/Short Answer)  
 - Manage submissions and grade student attempts  
 - Real-time exam monitoring  
 - Push notifications for exam updates  
 
-### 👩🎓 Student Features:  
+### Student Features:  
 - Take timed exams with resume functionality  
 - View completed exams with answers/feedback  
 - Receive result notifications  
@@ -21,7 +21,7 @@
 
 ---
 
-## 🛠️ Technologies Used  
+## Technologies Used  
 - **Frontend**: Flutter (Dart)  
 - **Backend**:  
   - Firebase Authentication  
@@ -36,7 +36,7 @@
 
 ---
 
-## 🚀 Getting Started  
+## Getting Started  
 
 ### Prerequisites  
 - Flutter SDK 3.0+  
@@ -65,7 +65,7 @@
 
 ---
 
-## 📂 Project Structure  
+## Project Structure  
 ```
 Online Exam Management System/
 ├── .dart_tool/
@@ -111,37 +111,37 @@ Online Exam Management System/
 
 ---
 
-## 🔑 Key Features  
+## Key Features  
 
 ### Shared Functionality  
-- 🔐 Role-based authentication (Student/Teacher)  
-- 🔔 Push notifications system  
-- ⏰ Real-time exam scheduling/expiry  
-- 🔍 Fuzzy-search for exams/questions  
+- Role-based authentication (Student/Teacher)  
+- Push notifications system  
+- Real-time exam scheduling/expiry  
+- Fuzzy-search for exams/questions  
 
 ### Teacher Specific  
-- 📝 Rich exam creation with:  
+- Rich exam creation with:  
   - Question randomization  
   - File/image attachments  
   - Multiple grading schemes  
-- 📊 Submission management with:  
+- Submission management with:  
   - Manual essay grading  
   - Feedback system  
   - Bulk result publishing  
 
 ### Student Specific  
-- 🕒 Timed exam interface with:  
+- Timed exam interface with:  
   - Auto-save progress  
   - Question navigation  
   - Type-specific answer inputs  
-- 📚 Historical attempt review:  
+- Historical attempt review:  
   - Correct answers highlighting  
   - Grade breakdowns  
   - Teacher feedback  
 
 ---
 
-## 🧩 Components Highlights  
+## Components Highlights  
 
 ### Core Services  
 - **ExamService**: Manages exam lifecycle and auto-submissions  
@@ -156,7 +156,7 @@ Online Exam Management System/
 
 ---
 
-## 📄 Firebase Collections  
+## Firebase Collections  
 - **Exams**: Exam metadata and scheduling  
 - **Questions**: Exam content storage  
 - **Attempts**: Student exam attempts  
@@ -166,27 +166,26 @@ Online Exam Management System/
 
 ---
 
-## 🔮 Future Roadmap  
-- 📊 Advanced student performance analytics  
-- 📴 Offline exam support with sync  
-- 🤖 AI-assisted essay grading  
-- 🌐 Multi-language support  
-- 📈 Detailed reporting dashboard  
+## Future Roadmap  
+- Advanced student performance analytics  
+- Offline exam support with sync  
+- Multi-language support  
+- Detailed reporting dashboard  
 
 ---
 
-## 📜 License  
+## License  
 This project is licensed under the MIT License - see `LICENSE` for details.  
 
 ---
 
-## 🙏 Acknowledgments  
+## Acknowledgments  
 - Flutter community for extensive documentation  
 - Firebase team for robust backend services  
 - Icons8 for UI assets  
 - Provider package for state management  
 
-For questions or support, contact [kvenus192@gmail.com](mailto:kvenus192@gmail.com)  
+For questions or support, contact [kvenus192@gmail.com](mailto:kvenus192@gmail.com)
 
 ## Next Steps
 - Planned future enhancements include:

@@ -257,6 +257,21 @@ class _LoginState extends State<Login> {
           ),
           Container(height: 20),
           Container(height: 20),
+          Container(
+            alignment: Alignment.center,
+            child: InkWell(
+              onTap: () {
+                Navigator.of(context).pushReplacementNamed('register');
+              },
+              child: const Text(
+                "Don't have an account? Register",
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Color.fromARGB(255, 8, 41, 114),
+                ),
+              ),
+            ),
+          ),
         ]),
       ),
     );

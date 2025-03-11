@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'viewExams.dart';
 
 class TeacherHomePage extends StatefulWidget {
   const TeacherHomePage({super.key});
@@ -71,6 +72,15 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
             ),
             _drawerDivider(),
             _createDrawerItem(
+              icon: Icons.visibility,
+              text: 'View Exams',
+              onTap: () {
+                Navigator.of(context)
+                    .pushNamedAndRemoveUntil("viewexams", (route) => false);
+              },
+            ),
+            _drawerDivider(),
+            _createDrawerItem(
               icon: Icons.notifications,
               text: 'Notifications',
               onTap: () {
@@ -136,7 +146,7 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
                             ),
                             SizedBox(height: 10,),
                             const Text(
-                              '\t\t\t\tEDUHUB!',
+                              '\t\t\t\tOEMS!',
                               style: TextStyle(
                                   fontSize: 50,
                                   fontFamily: 'Patua One',
@@ -176,6 +186,20 @@ class _TeacherHomePageState extends State<TeacherHomePage> {
                         () {
                           Navigator.of(context)
                     .pushNamedAndRemoveUntil("submissions", (route) => false);
+                        }
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 32),
+                  Center(
+                    child: SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.75,
+                      child: _buildImageCard(
+                        'View Exams', 
+                        'assets/Exam.png', 
+                        () {
+                          Navigator.of(context)
+                    .pushNamedAndRemoveUntil("viewexams", (route) => false);
                         }
                       ),
                     ),

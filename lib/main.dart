@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'auth/login.dart';
+import 'auth/register.dart';
 import 'exam_service.dart';
 import 'notifications.dart';
 import 'student/availableexams.dart';
@@ -15,19 +16,23 @@ import 'teacher/studentsubmission.dart';
 import 'teacher/submissions.dart';
 import 'teacher/submittedexams.dart';
 import 'teacher/teacherhomepage.dart';
+import 'teacher/viewExams.dart';
 import 'welcomePage.dart';
+import 'firebase_config.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: FirebaseOptions(
-    apiKey: "AIzaSyCQYUeU4GPthFif0U4g-j-6H_8BxNbcuCs",
-    authDomain: "itcs444project-cb0e2.firebaseapp.com",
-    projectId: "itcs444project-cb0e2",
-    storageBucket: "itcs444project-cb0e2.firebasestorage.app",
-    messagingSenderId: "164024235304",
-    appId: "1:164024235304:web:d70abe49fa2f7a598f0c1d",
-    measurementId: "G-JRJX05MJG0"
-  ));
+  await Firebase.initializeApp(
+    options: FirebaseOptions(
+      apiKey: FirebaseConfig.apiKey,
+      authDomain: FirebaseConfig.authDomain,
+      projectId: FirebaseConfig.projectId,
+      storageBucket: FirebaseConfig.storageBucket,
+      messagingSenderId: FirebaseConfig.messagingSenderId,
+      appId: FirebaseConfig.appId,
+      measurementId: FirebaseConfig.measurementId,
+    ),
+  );
 
   runApp(const MainApp());
 }
@@ -40,7 +45,7 @@ class MainApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (_) => ExamService()..startCheckingExams(),
       child: MaterialApp(
-        title: 'EDUHUB',
+        title: 'Online Exam Management System',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           appBarTheme: const AppBarTheme(
@@ -61,6 +66,7 @@ class MainApp extends StatelessWidget {
           "studenthomepage": (context) => const StudentHomePage(),
           "teacherhomepage": (context) => const TeacherHomePage(),
           "login": (context) => const Login(),
+          "register": (context) => const Register(),
           "welcomePage": (context) => const WelcomePage(),
           "createexam": (context) => const CreateExam(),
           "submittedexams": (context) => const SubmittedExams(),
@@ -71,6 +77,7 @@ class MainApp extends StatelessWidget {
           "exam": (context) => const Exam(),
           "examanswers": (context) => const ExamAnswers(),
           "notifications": (context) => const Notifications(),
+          "viewexams": (context) => const ViewExamsPage(),
         },
       ),
     );

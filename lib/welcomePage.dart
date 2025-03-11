@@ -112,7 +112,7 @@ class _WelcomePageState extends State<WelcomePage> {
                       Image.asset('assets/Logo.png', width: 228, height: 264),
                       SizedBox(height: 60),
                       Text(
-                        'EDUHUB',
+                        'OEMS',
                         style: TextStyle(
                           fontFamily: 'Poller One',
                           fontSize: 60,
